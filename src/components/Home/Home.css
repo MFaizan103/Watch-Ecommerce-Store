@@ -1,0 +1,7 @@
+.video {
+  height: auto;
+  overflow: hidden;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+}

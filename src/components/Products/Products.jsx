@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { DataContext } from "./../Context/DataProvider";
 
 export const Products = () => {
-  const { products } = useContext(DataContext);
+  const { products, addtoCart } = useContext(DataContext);
 
   return (
     <div className="products">
@@ -19,7 +19,7 @@ export const Products = () => {
             </h3>
             <p>{e_products.description}</p>
             <h4>${e_products.price}</h4>
-            <button>Add to Cart</button>
+            <button onClick={() => addtoCart(e_products._id)}>Add to Cart</button>
           </div>
         </div>
       ))}

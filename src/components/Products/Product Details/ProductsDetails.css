@@ -35,7 +35,8 @@
   font-size: 2rem;
 }
 
-.box-details button {
+.box-details button,
+.box-details .cart-btn {
   border: 1px solid #555;
   outline: none;
   background-color: #333;
@@ -67,23 +68,21 @@
   overflow: hidden;
 }
 
-.box-details .cart {
-  width: 200px;
-  height: 35px;
+.box-details .cart-btn {
+  padding: 10px 25px;
   letter-spacing: 2px;
+  display: inline-block;
   text-transform: uppercase;
 }
 
-@media(max-width:500px){
-    .details{
-        padding: 0;
-    }
-    .box-details .thumb img{
-        width: 40px;
-    }
-.img-container{
-   height: 350px;
-
+@media (max-width: 500px) {
+  .details {
+    padding: 0;
+  }
+  .box-details .thumb img {
+    width: 40px;
+  }
+  .img-container {
+    height: 350px;
+  }
 }
-}
-
